@@ -126,7 +126,7 @@ def delete_activity(id):
 
 @app.post('/signups')
 def post_signup():
-    data = requests.get_json()
+    data = request.get_json()
 
     try:
         new_signup = Signup(
